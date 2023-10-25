@@ -11,10 +11,10 @@ There is no install mechanism, just copy the resulting executable wherever
 you see fit, ie. to /usr/bin, /usr/local/bin or /opt/bin.
 
 user@hostname$ ./uuidtime
-00007708-1a00-005d-8cea-d208805b9260
+07e70919-0000-6538-8335-000cd2cf45cb
 
 user@hostname$ for i in `seq 1 4`; do ./uuidtime; done
-00007708-1a00-005d-8cea-d2088a07bf1e
-00007708-1a00-005d-8cea-d2088eac7793
-00007708-1a00-005d-8cea-d20892f0fe24
-00007708-1a00-005d-8cea-d20897093272
+07e70919-0000-6538-8354-0ebfbdefb45c
+07e70919-0000-6538-8354-0ed3d8e93e29
+07e70919-0000-6538-8354-0ee32fb166bc
+07e70919-0000-6538-8354-0ef1e9b052e7
