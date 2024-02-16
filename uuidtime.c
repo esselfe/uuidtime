@@ -22,10 +22,10 @@ int main (int argc, char **argv) {
 		switch (opt) {
 		case 'h':
 			printf("Usage: uuidtime { -h/--help | -V/--version }\n");
-			exit(1);
+			exit(0);
 		case 'V':
 			printf("uuidtime %s\n", uuidtime_version);
-			exit(1);
+			exit(0);
 		}
 	}
 
