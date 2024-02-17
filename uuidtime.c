@@ -33,11 +33,17 @@ int main (int argc, char **argv) {
 	gettimeofday(&tv0, NULL);
 	time_t t0 = (time_t)tv0.tv_sec;
 	struct tm *tm0 = gmtime(&t0);
-	char buffer[33];
+	if (tm0 == NULL) {
+		perror("gmtime");
+		return 1;
+	}
+
+	// 36 characters, including the null-terminator
+	char buffer[36];
 	// d94deb38-e066-11e9-9324-001b77c4af72
 	// yyyymmdd-0000-ssss-ssuu-uuuurrrrrrrr
 	srand((unsigned int)tv0.tv_usec/100);
-	sprintf(buffer,"%04x%02x%02x%04x%06x%06x%02x%02x%02x",
+	snprintf(buffer, 35, "%04x%02x%02x%04x%06x%06x%02x%02x%02x",
 		(int)tm0->tm_year+1900, (int)tm0->tm_mon, (int)tm0->tm_mday, 0,
 		(int)tv0.tv_sec, (int)tv0.tv_usec, rand()%255, rand()%255, rand()%255);
 	
