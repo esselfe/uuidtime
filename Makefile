@@ -1,5 +1,5 @@
 
-CFLAGS = -std=c11 -Wall -O2 -D_GNU_SOURCE
+CFLAGS = -std=c11 -Wall -O2 -D_DEFAULT_SOURCE
 LDFLAGS =
 PROGNAME = uuidtime
 
