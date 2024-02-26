@@ -1,3 +1,5 @@
+// uuidtime is a Linux program to generate an UUID(like) of current time based
+// on seconds and microseconds since epoch(1970).
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
