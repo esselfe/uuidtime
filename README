@@ -1,4 +1,4 @@
-uuidtime is a Linux program to generate an UUID of current time based on
+uuidtime is a Linux program to generate an UUID(like) of current time based on
 seconds and microseconds since epoch(1970). I started this project when I
 realized I couldn't sort many UUID from 'uuidgen -t'. The real UUIDs use
 multiple factors to assure unicity of the id, but uuidtime only relies on
