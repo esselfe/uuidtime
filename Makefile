@@ -1,5 +1,5 @@
 
-CFLAGS = -std=c11 -Wall -O2 -D_DEFAULT_SOURCE
+CFLAGS = -std=c17 -Wall -O2 -D_DEFAULT_SOURCE
 LDFLAGS =
 PROGNAME = uuidtime
 
