@@ -15,6 +15,7 @@ static const struct option long_options[] = {
 };
 static const char *short_options = "hV";
 
+// Program entry point
 int main (int argc, char **argv) {
 	int opt;
 	while (1) {
