@@ -8,7 +8,7 @@ PROGNAME = uuidtime
 default: all
 
 all: $(PROGNAME)
-	@ls -li --color=auto $(PROGNAME)
+	@ls -l --color=auto $(PROGNAME)
 
 $(PROGNAME): uuidtime.c
 	gcc $(CFLAGS) uuidtime.c -o $(PROGNAME)
