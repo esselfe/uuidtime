@@ -52,6 +52,7 @@ int main (int argc, char **argv) {
 	
 	char *c = buffer;
 	unsigned int cnt = 0;
+	// Add dashes afterward since they cut in the middle of number sets
 	while (1) {
 		fputc(*c, stdout);
 		if (cnt == 7 || cnt == 11 || cnt == 15 || cnt == 19)
