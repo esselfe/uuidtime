@@ -1,0 +1,4 @@
+.vs
+*.user
+*.filters
+uuidtime-project/x64/Debug/*

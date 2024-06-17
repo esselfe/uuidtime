@@ -1,0 +1,20 @@
+uuidtime is a Linux program to generate an UUID(like) of current time based on
+seconds and microseconds since epoch(1970). I started this project when I
+realized I couldn't sort many UUID from 'uuidgen -t'. The real UUIDs use
+multiple factors to assure unicity of the id, but uuidtime only relies on
+microseconds precision and 3 random bytes to ensure it can generate an 
+acceptable unique id. So to resume there are greater chances to hit a 
+collision with this program than with uuidgen.
+
+You can compile the source code by running 'make' in the source directory.
+There is no install mechanism, just copy the resulting executable wherever
+you see fit, ie. to /usr/bin, /usr/local/bin or /opt/bin.
+
+user@hostname$ ./uuidtime
+07e70919-0000-6538-8335-000cd2cf45cb
+
+user@hostname$ for i in `seq 1 4`; do ./uuidtime; done
+07e70919-0000-6538-8354-0ebfbdefb45c
+07e70919-0000-6538-8354-0ed3d8e93e29
+07e70919-0000-6538-8354-0ee32fb166bc
+07e70919-0000-6538-8354-0ef1e9b052e7
